@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:text="Album Title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/albumTitleTV"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:background="@android:color/holo_orange_dark"
+        android:paddingLeft="25px"
+        android:gravity="center_vertical"
+        tools:background="@android:color/holo_green_dark"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="64dp"
+            app:srcCompat="@color/colorPrimary"
+            android:id="@+id/albumCoverIV"
+            android:layout_height="64dp"/>
+
+        <TextView
+            android:text="Spotify ID"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:id="@+id/spotifyIDTV"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center_vertical"
+            android:paddingLeft="25px"
+            android:textStyle="normal|italic"
+            android:fontFamily="serif-monospace"/>
+    </LinearLayout>
+</LinearLayout>
